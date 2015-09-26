@@ -6,4 +6,5 @@ $base-paddings-for-header: 20px;
     padding-bottom: $base-paddings-for-header;
     @include flex;
     align-items: center;
+    height: 40px;
 }
