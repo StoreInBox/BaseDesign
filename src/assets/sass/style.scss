@@ -1,7 +1,19 @@
-// functions & mixins
-@import "animate.scss";
-@import "functions.scss";
-@import "mixins.scss";
+// functions
+@import "functions/rem.scss";
+
+// mixins
+@import "mixins/transition.scss";
+@import "mixins/no-select.scss";
+@import "mixins/lists.scss";
+@import "mixins/inlines.scss";
+@import "mixins/clearfix.scss";
+@import "mixins/table.scss";
+@import "mixins/text-elipsis.scss";
+@import "mixins/flex.scss";
+@import "mixins/media-queries.scss";
+@import "mixins/icons.scss";
+@import "mixins/vertical-align.scss";
+@import "mixins/basic-block.scss";
 
 // base
 @import "base.scss";
