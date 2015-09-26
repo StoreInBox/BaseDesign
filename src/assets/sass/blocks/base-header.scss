@@ -1,0 +1,9 @@
+$base-paddings-for-header: 20px;
+
+.base-header {
+    @include basic-block;
+    padding-top: $base-paddings-for-header;
+    padding-bottom: $base-paddings-for-header;
+    @include flex;
+    align-items: center;
+}
