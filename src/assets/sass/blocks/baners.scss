@@ -1,0 +1,13 @@
+.baners {
+    @include clearfix;
+}
+
+.baners-box {}
+
+a.baner {
+    display: block;
+}
+.baner {
+    height: calc(100vh - 80px);
+    background-position: center center !important;
+}
