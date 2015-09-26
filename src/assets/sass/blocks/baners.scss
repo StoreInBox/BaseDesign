@@ -2,7 +2,33 @@
     @include clearfix;
 }
 
-.baners-box {}
+.baners-box {
+    position: relative;
+}
+
+.baner-nav {
+    position: absolute;
+    width: 30px;
+    height: 180px;
+    top: calc(50% - 90px);
+    z-index: 4;
+    background-size: 30px 180px !important;
+    cursor: pointer;
+    &--prev {
+        left: 20px;
+        background: url(/static/images/baner-prev.png);
+        &:hover {
+            background: url(/static/images/baner-prev-hover.png);
+        }
+    }
+    &--next {
+        right: 20px;
+        background: url(/static/images/baner-next.png);
+        &:hover {
+            background: url(/static/images/baner-next-hover.png);
+        }
+    }
+}
 
 a.baner {
     display: block;
