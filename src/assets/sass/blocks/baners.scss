@@ -9,7 +9,7 @@
     position: absolute;
     width: 30px;
     height: 180px;
-    top: calc(50% - 45px);
+    top: calc(50% - 90px);
     z-index: 4;
     background-size: 30px 180px !important;
     cursor: pointer;
@@ -33,6 +33,35 @@ a.baner {
     display: block;
 }
 .baner {
-    height: calc(100vh - 80px);
+    height: calc(100vh - (80px + 80px));
     background-position: center center !important;
 }
+
+$base-paddings-for-discover: 20px;
+
+.discover-more {
+    @include basic-block;
+    height: 40px;
+    padding-top: $base-paddings-for-discover;
+    padding-bottom: $base-paddings-for-discover;
+}
+
+.discover {
+    margin: auto;
+    width: 200px;
+    padding-bottom: 24px;
+    text-align: center;
+    background-image: url(/static/images/discover.png);
+    background-repeat: no-repeat;
+    background-size: 48px 14px;
+    background-position: center bottom;
+    @include font-size(14);
+    color: #969696;
+    line-height: 1;
+    cursor: pointer;
+    z-index: 999;
+    &--active {
+        @include inline-middle;
+        animation: scrollDownBox 1s ease-out 1;
+    } // &--active
+} // discover
