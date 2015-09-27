@@ -31,14 +31,38 @@
 
 .sp-image {
     box-sizing: border-box;
-    width: calc(40% - 20px);
+    width: calc(40% - 10px);
     margin: 10px;
+    margin-left: 0;
     padding: 10px;
 }
 
 .sp-description {
     box-sizing: border-box;
-    width: calc(60% - 20px);
+    width: calc(60% - 10px);
     margin: 10px;
+    margin-right: 0;
     padding: 10px;
+}
+
+.sp-image-nav {
+    width: 100%;
+    margin-top: -5px;
+    margin-bottom: 5px;
+}
+
+.sp-image-nav-list {
+    @include clear-list;
+    @include flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.sp-image-nav-list-item {
+    width: calc(20% - 10px);
+    margin: 5px;
+    padding: 5px;
+    &__image {
+        cursor: pointer;
+    }
 }
