@@ -1,7 +1,7 @@
 (function($) {
 
     function scrollToContent() {
-        var trigger = $('[data-role="scroll-to-content"]');
+        var trigger = $('[data-front="scroll-to-content"]');
         var windowHeight = $(window).height();
         trigger.click(function() {
             $('html, body').animate({
