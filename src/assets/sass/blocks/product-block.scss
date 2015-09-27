@@ -9,3 +9,9 @@
         width: 100%;
     }
 }
+
+.product-block-title {
+    &__text {
+        font-weight: 700;
+    }
+}
