@@ -5,6 +5,12 @@
     padding: 10px;
     border: 1px solid #DCDCDC;
     border-radius: 3px;
+    @include bp(md) {
+        width: calc(50% - 20px);
+    }
+    @include bp(allsmall) {
+        width: calc(100% - 20px);
+    }
 }
 
 .product-image {
