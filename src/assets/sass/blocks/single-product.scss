@@ -35,6 +35,9 @@
     margin: 10px;
     margin-left: 0;
     padding: 10px;
+    @include bp(allsmall) {
+        width: calc(100% - 10px);
+    }
     &__image {
         border-radius: 3px;
     }
@@ -46,6 +49,9 @@
     margin: 10px;
     margin-right: 0;
     padding: 10px;
+    @include bp(allsmall) {
+        width: calc(100% - 10px);
+    }
 }
 
 .sp-image-nav {
