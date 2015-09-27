@@ -1,7 +1,19 @@
 (function($) {
 
+    function scrollToContent() {
+        var trigger = $('[data-role="scroll-to-content"]');
+        var windowHeight = $(window).height();
+        trigger.click(function() {
+            $('html, body').animate({
+              scrollTop: windowHeight
+            }, 1000);
+        });
+    }
+
     // document ready
-    $(window).on('load', function() {});
+    $(window).on('load', function() {
+        scrollToContent();
+    });
 
     // all initial on window resize
     $(window).on('resize', function() {});
