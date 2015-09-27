@@ -4,7 +4,6 @@ $base-paddings-for-breadcrumps: 20px;
     @include basic-block;
     padding-top: $base-paddings-for-header;
     padding-bottom: $base-paddings-for-header;
-    margin-bottom: $standart-margin-between;
 }
 
 .breadcrumps-list {
