@@ -3,6 +3,7 @@
     margin-top: $standart-margin-between;
     margin-bottom: $standart-margin-between;
     text-align: center;
-    @include font-size(36);
-    &__text {}
+    &__text {
+        @include font-size(36);
+    }
 }

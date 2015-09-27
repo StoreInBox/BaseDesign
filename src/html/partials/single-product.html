@@ -65,3 +65,28 @@
         </div>
     </section>
 </main>
+<aside>
+    @@include('section-title.html', {"title": "Relevant items"})
+    <section class="product-list" data-front="product-list">
+        @@include('product-list-item.html', {
+            "title": "Milano tram",
+            "price": "34",
+            "photo": "/static/images/tmp/milanotram.jpg"
+        })
+        @@include('product-list-item.html', {
+            "title": "Tallin Tram",
+            "price": "80",
+            "photo": "/static/images/tmp/tallintram.jpg"
+        })
+        @@include('product-list-item.html', {
+            "title": "Prague tram",
+            "price": "21",
+            "photo": "/static/images/tmp/praguetram.jpg"
+        })
+        @@include('product-list-item.html', {
+            "title": "Torino tram This is a super awesome trma on the planet",
+            "price": "20",
+            "photo": "/static/images/tmp/torinotram.jpg"
+        })
+    </section>
+</aside>
