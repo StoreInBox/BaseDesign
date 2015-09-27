@@ -21,8 +21,38 @@
 }
 
 .sp-price-and-buy {
-    padding: 0 0 0 8px;
-    background-color: #fff;
+    padding: 10px 20px;
+    background-color: #FFEBAF;
+    border-radius: 3px;
+    @include flex;
+    justify-content: flex-end;
+    position: relative;
+    &:before {
+        display: block;
+        content: '';
+        border-radius: 100%;
+        background-color: white;
+        position: absolute;
+        top: calc(50% - 5px);
+        left: -5px;
+        width: 10px;
+        height: 10px;
+    }
+    &:after {
+        display: block;
+        content: '';
+        border-radius: 100%;
+        background-color: white;
+        position: absolute;
+        top: calc(50% - 5px);
+        right: -5px;
+        width: 10px;
+        height: 10px;
+    }
+}
+
+.sp-buy {
+    margin-left: 10px;
 }
 
 .sp-main-info {
