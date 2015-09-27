@@ -1,0 +1,13 @@
+.button {
+    color: #27ae60;
+    border-radius: 3px;
+    border: 1px solid #D2D2D2;
+    &__icon {
+        @include font-size(14);
+        margin-right: 5px;
+    }
+    &--thin {
+        line-height: 1;
+        padding: 4px 6px;
+    }
+}
