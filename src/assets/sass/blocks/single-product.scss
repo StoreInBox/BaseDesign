@@ -71,6 +71,9 @@
     width: calc(20% - 10px);
     margin: 5px;
     padding: 5px;
+    @include bp(allsmall) {
+        width: calc(30% - 10px);
+    }
     &__image {
         cursor: pointer;
         border-radius: 3px;
