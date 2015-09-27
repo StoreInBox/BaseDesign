@@ -1,10 +1,9 @@
 .baners {
     @include clearfix;
-}
-
-.baners-box {
     position: relative;
 }
+
+.baners-box {}
 
 .baner-nav {
     position: absolute;
