@@ -18,7 +18,8 @@
 .product-title {
     @include font-size(20);
     margin: 0;
-    a {
+    &__text {
+        @include text-elipsis;
         color: $text-color;
         text-decoration: none;
     }
