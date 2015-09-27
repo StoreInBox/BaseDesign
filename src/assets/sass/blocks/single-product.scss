@@ -35,6 +35,9 @@
     margin: 10px;
     margin-left: 0;
     padding: 10px;
+    &__image {
+        border-radius: 3px;
+    }
 }
 
 .sp-description {
@@ -64,5 +67,6 @@
     padding: 5px;
     &__image {
         cursor: pointer;
+        border-radius: 3px;
     }
 }
