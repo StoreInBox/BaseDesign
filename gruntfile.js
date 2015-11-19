@@ -38,6 +38,9 @@ module.exports = function(grunt) {
             dist: {
                 src: [
                     'bower_components/jquery/dist/jquery.min.js',
+                    'src/assets/js/scroll-discover.js',
+                    'src/assets/js/equal-height.js',
+                    'src/assets/js/fix-panel.js',
                     'src/assets/js/scripts.js'
                 ],
                 dest: 'production/static/js/production.js'
@@ -86,6 +89,20 @@ module.exports = function(grunt) {
                         dest: 'production/static/css/',
                         filter: 'isFile'
                     },
+                    {
+                        expand: true,
+                        cwd: 'bower_components/slick-carousel/slick',
+                        src: ['slick.js'],
+                        dest: 'production/static/js/',
+                        filter: 'isFile'
+                    },
+                    {
+                        expand: true,
+                        cwd: 'bower_components/slick-carousel/slick',
+                        src: ['slick.css', 'slick-theme.css'],
+                        dest: 'production/static/css/',
+                        filter: 'isFile'
+                    },
                 ],
             },
         },
@@ -94,7 +111,7 @@ module.exports = function(grunt) {
             your_target: {
                 expand: true,
                 cwd: 'src/html/',
-                src: ['*/*.html', '*.html'],
+                src: ['*/*/*.html', '*/*.html', '*.html'],
                 dest: './production'
             }
         },
@@ -127,7 +144,7 @@ module.exports = function(grunt) {
                 tasks: ['imagemin'],
             },
             includereplace: {
-                files: ['src/html/*.html', 'src/html/*/*.html'],
+                files: ['src/html/*.html', 'src/html/*/*.html', 'src/html/*/*/*.html'],
                 tasks: ['includereplace']
             }
         },
