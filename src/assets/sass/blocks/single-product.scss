@@ -86,8 +86,25 @@
 
 .sp-image-nav {
     width: 100%;
-    margin-top: -5px;
+    margin-top: 10px;
     margin-bottom: 5px;
+    position: relative;
+    box-sizing: border-box;
+    padding: 0 20px;
+    &__prev {
+        @include vertical-align;
+        position: absolute;
+        color: #8E8E8E;
+        left: 0px;
+        cursor: pointer;
+    }
+    &__next {
+        @include vertical-align;
+        position: absolute;
+        color: #8E8E8E;
+        right: 0px;
+        cursor: pointer;
+    }
 }
 
 .sp-image-nav-list {
@@ -95,16 +112,20 @@
     @include flex;
     align-items: center;
     justify-content: flex-start;
+    @include no-select;
 }
 
 .sp-image-nav-list-item {
     width: calc(20% - 10px);
     margin: 5px;
     padding: 5px;
+    outline: none;
+    @include no-select;
     @include bp(allsmall) {
         width: calc(30% - 10px);
     }
     &__image {
+        @include no-select;
         cursor: pointer;
         border-radius: 3px;
     }
