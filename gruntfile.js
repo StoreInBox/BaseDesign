@@ -37,7 +37,7 @@ module.exports = function(grunt) {
         concat: {
             dist: {
                 src: [
-                    'bower_components/jquery/dist/jquery.min.js',
+                    'src/assets/js/product-image.js',
                     'src/assets/js/scroll-discover.js',
                     'src/assets/js/equal-height.js',
                     'src/assets/js/fix-panel.js',
@@ -87,6 +87,13 @@ module.exports = function(grunt) {
                         cwd: 'bower_components/fontawesome/css',
                         src: ['font-awesome.min.css'],
                         dest: 'production/static/css/',
+                        filter: 'isFile'
+                    },
+                    {
+                        expand: true,
+                        cwd: 'bower_components/jquery/dist',
+                        src: ['jquery.min.js'],
+                        dest: 'production/static/js/',
                         filter: 'isFile'
                     },
                     {
