@@ -3,6 +3,7 @@ $(window).on('load', function() {
     scrollToContent();
     equalheight('[data-front="product-list"] [data-front="product-list-item"]');
     fixPanel();
+    productImage();
 });
 
 // all initial on window resize
