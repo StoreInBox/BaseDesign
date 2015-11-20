@@ -1,0 +1,35 @@
+.catalogue-block {
+    @include basic-block;
+    position: fixed;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #A9362A;
+    @include flex;
+    display: none;
+    &--active {
+        display: block;
+    }
+}
+
+.catalogue-main-list {
+    background-color: #AF4B41;
+    width: 240px;
+    color: white;
+    padding: 20px 0;
+}
+
+.catalogue-main-nav {
+    @include clear-list;
+    li + li {
+        margin-top: 10px;
+        padding-top: 10px;
+        border-top: 1px solid rgba(255, 255, 255, 0.15);
+    }
+    &__item {
+        color: white;
+        text-decoration: none;
+        padding: 0 15px;
+    }
+}

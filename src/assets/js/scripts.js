@@ -4,6 +4,7 @@ $(window).on('load', function() {
     equalheight('[data-front="product-list"] [data-front="product-list-item"]');
     fixPanel();
     productImage();
+    catalogueBlock();
 });
 
 // all initial on window resize

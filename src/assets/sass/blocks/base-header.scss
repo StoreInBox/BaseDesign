@@ -61,6 +61,7 @@ $base-paddings-for-header: 20px;
     text-decoration: none;
     border-radius: 4px;
     box-sizing: border-box;
+    @include no-select;
     &--active {
         background-color: #A9362A;
     }

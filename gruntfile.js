@@ -37,6 +37,7 @@ module.exports = function(grunt) {
         concat: {
             dist: {
                 src: [
+                    'src/assets/js/catalogue-block.js',
                     'src/assets/js/product-image.js',
                     'src/assets/js/scroll-discover.js',
                     'src/assets/js/equal-height.js',
