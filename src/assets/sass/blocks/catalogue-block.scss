@@ -46,6 +46,9 @@
 }
 
 .cat-preview {
+    flex: 0 0 25%;
+    text-align: center;
+    line-height: 1.2;
     + .cat-preview {
         margin-left: 10px;
     }
@@ -54,7 +57,13 @@
     border-radius: 3px;
     padding: 5px 10px;
     text-align: center;
+    &__image {
+        max-height: 80px;
+        margin: auto;
+    }
     &__text {
+        display: block;
+        margin-top: 8px;
         @include font-size(16);
         color: #363636;
     }
