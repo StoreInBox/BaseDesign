@@ -12,9 +12,6 @@
         display: block;
     }
     color: white;
-    a {
-        color: white;
-    }
 }
 
 .catalogue-block-wrap {
@@ -42,4 +39,23 @@
 .catalogue-main-content {
     flex: auto;
     padding: 10px;
+}
+
+.cat-previews {
+    display: flex;
+}
+
+.cat-preview {
+    + .cat-preview {
+        margin-left: 10px;
+    }
+    text-decoration: none;
+    background-color: white;
+    border-radius: 3px;
+    padding: 5px 10px;
+    text-align: center;
+    &__text {
+        @include font-size(16);
+        color: #363636;
+    }
 }
