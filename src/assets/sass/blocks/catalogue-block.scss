@@ -13,14 +13,18 @@
     }
 }
 
-.catalogue-main-list {
+.catalogue-block-wrap {
+    display: flex;
+}
+
+.catalogue-main-nav {
     background-color: #AF4B41;
-    width: 240px;
+    flex: 0 0 240px;
     color: white;
     padding: 10px 0;
 }
 
-.catalogue-main-nav {
+.catalogue-main-list {
     @include clear-list;
     li + li {
         margin-top: 10px;
@@ -32,4 +36,8 @@
         text-decoration: none;
         padding: 0 15px;
     }
+}
+
+.catalogue-main-content {
+    flex: auto;
 }
