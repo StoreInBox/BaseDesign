@@ -1,8 +1,11 @@
 .button {
-    background-color: #c0392b;
-    color: white;
+    background-color: $button-color;
+    color: $button-text-color;
     border-radius: 3px;
     @include font-size(16);
+    &:hover {
+        background-color: $button-color-hover;
+    }
     &__icon {
         @include font-size(14);
         margin-right: 5px;
