@@ -42,6 +42,7 @@ module.exports = function(grunt) {
                     'src/assets/js/scroll-discover.js',
                     'src/assets/js/equal-height.js',
                     'src/assets/js/fix-panel.js',
+                    'src/assets/js/categories-menu.js',
                     'src/assets/js/scripts.js'
                 ],
                 dest: 'production/static/js/production.js'

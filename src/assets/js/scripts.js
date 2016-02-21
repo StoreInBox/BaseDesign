@@ -5,6 +5,7 @@ $(window).on('load', function() {
     fixPanel();
     productImage();
     catalogueBlock();
+    CategoriesMneu();
 });
 
 // all initial on window resize
