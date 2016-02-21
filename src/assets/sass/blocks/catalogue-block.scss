@@ -5,7 +5,7 @@
     z-index: 1000;
     width: 100%;
     box-sizing: border-box;
-    background-color: #A9362A;
+    background-color: #DEDEDE;
     @include flex;
     display: none;
     &--active {
@@ -19,18 +19,18 @@
 }
 
 .catalogue-main-nav {
-    background-color: #AF4B41;
+    background-color: #D4D4D4;
     flex: 0 0 240px;
     color: white;
     padding: 10px 0;
     &__item + &__item {
         margin-top: 10px;
         padding-top: 10px;
-        border-top: 1px solid rgba(255, 255, 255, 0.15);
+        border-top: 1px solid rgba(80, 80, 80, 0.15);
     }
     &__item {
         display: block;
-        color: white;
+        color: #363636;
         text-decoration: none;
         padding: 0 15px;
     }
