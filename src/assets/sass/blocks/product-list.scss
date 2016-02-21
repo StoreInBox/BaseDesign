@@ -3,4 +3,7 @@
     @include flex;
     margin-top: $standart-margin-between;
     margin-bottom: $standart-margin-between;
+    &--in-catalogue {
+        padding: 0;
+    }
 }

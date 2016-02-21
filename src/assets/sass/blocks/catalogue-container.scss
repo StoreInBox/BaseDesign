@@ -1,0 +1,10 @@
+.catalogue-container {
+    display: flex;
+    @include basic-block;
+}
+.catalogue-filters {
+    flex: 0 0 240px;
+}
+.catalogue-content {
+    flex: auto;
+}
