@@ -6,6 +6,7 @@ $(window).on('load', function() {
     productImage();
     catalogueBlock();
     CategoriesMneu();
+    toggleFilter();
 });
 
 // all initial on window resize
