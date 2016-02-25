@@ -44,6 +44,7 @@ module.exports = function(grunt) {
                     'src/assets/js/fix-panel.js',
                     'src/assets/js/categories-menu.js',
                     'src/assets/js/filters.js',
+                    'src/assets/js/price-range.js',
                     'src/assets/js/scripts.js'
                 ],
                 dest: 'production/static/js/production.js'

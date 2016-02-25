@@ -7,6 +7,7 @@ $(window).on('load', function() {
     catalogueBlock();
     CategoriesMneu();
     toggleFilter();
+    priceRange();
 });
 
 // all initial on window resize
