@@ -52,6 +52,12 @@ $base-paddings-for-header: 20px;
         margin: 0;
         @include font-size(16);
     }
+    @include bp(allsmall) {
+        display: none;
+    }
+    @include bp(md) {
+        display: none;
+    }
 }
 
 .catalogue {
