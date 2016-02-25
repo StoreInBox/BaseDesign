@@ -4,6 +4,8 @@
 }
 .catalogue-filters {
     flex: 0 0 240px;
+    box-sizing: border-box;
+    padding-right: 10px;
     @include bp(allsmall) {
         width: calc(100% - 20px);
         display: none;
