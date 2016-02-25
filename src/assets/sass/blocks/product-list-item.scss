@@ -11,6 +11,15 @@
     @include bp(allsmall) {
         width: calc(100% - 20px);
     }
+    &--in-calogue {
+        width: calc(33.3333% - 20px);
+        @include bp(md) {
+            width: calc(50% - 20px);
+        }
+        @include bp(allsmall) {
+            width: calc(100% - 20px);
+        }
+    }
 }
 
 .product-image {

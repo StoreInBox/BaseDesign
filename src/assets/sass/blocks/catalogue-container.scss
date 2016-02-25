@@ -4,6 +4,10 @@
 }
 .catalogue-filters {
     flex: 0 0 240px;
+    @include bp(allsmall) {
+        width: calc(100% - 20px);
+        display: none;
+    }
 }
 .catalogue-content {
     flex: auto;
