@@ -23,8 +23,7 @@
         background-color: $button-color-hover;
         color: $button-text-color;
         &:after {
-            // todo change the 'x' to utf8 symbol
-            content: 'x';
+            content: '\00D7';
             color: rgba(0, 0, 0, .4);
         }
     }
