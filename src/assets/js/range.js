@@ -1,4 +1,4 @@
-function priceRange () {
+function rangeFilter() {
 
     var rangeFilter = $('[data-role="range-filter"]');
 
