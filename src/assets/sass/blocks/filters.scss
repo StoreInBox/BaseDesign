@@ -2,6 +2,12 @@
     + .filter-box {
         margin-top: 10px;
         padding-top: 10px;
+        border-top: 1px solid #E6E6E6;
+    }
+    &__title {
+        @include font-size(17);
+        font-weight: 700;
+        margin-top: 10px;
     }
 }
 
@@ -24,7 +30,7 @@
         color: $button-text-color;
         &:after {
             content: '\00D7';
-            color: rgba(0, 0, 0, .4);
+            color: rgba(255, 255, 255, .5);
         }
     }
 }
@@ -32,5 +38,10 @@
 .range-filter {
     &__label {
         @include font-size(16);
+    }
+    &__current {
+        @include font-size(16);
+        font-weight: 700;
+        color: #54A0D8;
     }
 }
