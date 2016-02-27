@@ -13,4 +13,5 @@ $(window).on('load', function() {
 // all initial on window resize
 $(window).on('resize', function() {
     equalheight('[data-front="product-list"] [data-front="product-list-item"]');
+    catalogueBlock();
 });

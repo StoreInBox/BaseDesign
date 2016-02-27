@@ -25,6 +25,9 @@
     flex: 0 0 240px;
     color: white;
     padding: 10px 0;
+    @include bp(allsmall) {
+        flex: auto;
+    }
     &__item + &__item {
         margin-top: 10px;
         padding-top: 10px;
@@ -48,6 +51,9 @@
 .catalogue-main-content {
     flex: auto;
     padding: 10px;
+    @include bp(allsmall) {
+        display: none;
+    }
 }
 
 .cat-previews {
