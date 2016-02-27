@@ -69,6 +69,10 @@ $base-paddings-for-header: 20px;
     border-radius: 4px;
     box-sizing: border-box;
     @include no-select;
+    @include bp(allsmall) {
+        padding: 0px 4px;
+        @include font-size(16);
+    }
     &--active {
         background-color: $button-color-hover;
     }
