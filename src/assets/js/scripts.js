@@ -15,4 +15,5 @@ $(window).on('load', function() {
 $(window).on('resize', function() {
     equalheight('[data-front="product-list"] [data-front="product-list-item"]');
     catalogueBlock();
+    pagesMenu();
 });
