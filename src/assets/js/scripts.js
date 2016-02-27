@@ -8,6 +8,7 @@ $(window).on('load', function() {
     CategoriesMneu();
     toggleFilter();
     rangeFilter();
+    pagesMenu();
 });
 
 // all initial on window resize
