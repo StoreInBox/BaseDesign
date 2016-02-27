@@ -6,7 +6,6 @@
     width: 100%;
     box-sizing: border-box;
     background-color: white;
-    border-top: 1px solid #E8E8E8;
     border-bottom: 1px solid #E8E8E8;
     @include flex;
     display: none;
@@ -39,7 +38,7 @@
         text-decoration: none;
         padding: 0 15px;
         &--active {
-
+            color: $link-color;
         }
         &:nth-last-child(1) {
             border-bottom: 1px solid rgba(80, 80, 80, 0.15);

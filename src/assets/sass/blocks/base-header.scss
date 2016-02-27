@@ -23,6 +23,7 @@ $base-paddings-for-header: 20px;
     @include panel-width;
     @include transition(all, 0.3s, ease);
     background-color: white;
+    border: 1px solid #E8E8E8;
     &--fixed {
         position: fixed;
         top: 0px;

@@ -8,9 +8,15 @@
     box-sizing: border-box;
     padding: 10px;
     text-align: center;
+    margin-top: -1px;
     border-radius: 0 0 5px 5px;
+    border: 1px solid #E8E8E8;
+    border-top: 1px solid white;
     &--active {
         display: block;
+    }
+    @include bp(allsmall) {
+        border-radius: 0;
     }
 }
 

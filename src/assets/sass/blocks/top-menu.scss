@@ -14,5 +14,8 @@
         &--cart-count {
             cursor: pointer;
         } // &--cart-count
+        &--active {
+            color: $link-color;
+        }
     } // &__link
 }
