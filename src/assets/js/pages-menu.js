@@ -26,8 +26,16 @@ function pagesMenu() {
         'margin-left': -setMarginLeft
     });
 
-    pagesMenuBlockTrigger.click(function() {
+    pagesMenuBlockTrigger.click(function(event) {
+        event.stopPropagation();
         pagesMenuBlockTrigger.toggleClass('top-menu-list__link--active');
         pagesMenuBlock.toggleClass('pages-menu--active');
+    });
+
+    $('html').click(function() {
+        if (pagesMenuBlock.hasClass('pages-menu--active')) {
+            pagesMenuBlockTrigger.toggleClass('top-menu-list__link--active');
+            pagesMenuBlock.toggleClass('pages-menu--active');
+        }
     });
 }
