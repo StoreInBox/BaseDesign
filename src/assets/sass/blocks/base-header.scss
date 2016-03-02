@@ -1,40 +1,25 @@
 $base-paddings-for-header: 20px;
 
-@mixin panel-width {
-    // variables from base-block mixin
-    @include bp(allsmall) {
-        width: calc(100% - (#{$base-block-padding-small} * 2));
-    }
-    @include bp(md) {
-        width: calc(100% - (#{$base-block-padding-medium} * 2));
-    }
-    @include bp(lg) {
-        width: calc(100% - (#{$base-block-padding-large} * 2));
-    }
-}
-
 .base-header {
     @include basic-block;
     padding-top: $base-paddings-for-header;
     padding-bottom: $base-paddings-for-header;
     @include flex;
     align-items: center;
-    height: 40px;
-    @include panel-width;
+    box-sizing: border-box;
+    width: 100%;
     @include transition(all, 0.3s, ease);
     background-color: white;
-    border: 1px solid #E8E8E8;
+    box-shadow: 1px 2px 4px #ECECEC;
     &--fixed {
         position: fixed;
         top: 0px;
         left: 0px;
-        @include panel-width;
+        width: 100%;
         transform: translate(0, -100%);
-        box-shadow: 1px 2px 4px #ECECEC;
     }
     &--fixed-active {
         transform: translate(0, 0);
-        @include panel-width;
         z-index: 999;
     }
 }

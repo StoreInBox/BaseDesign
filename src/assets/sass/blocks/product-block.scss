@@ -1,5 +1,6 @@
 .product-block {
     @include basic-block;
+    box-sizing: border-box;
     width: 70%;
     margin: auto;
     @include bp(md) {
