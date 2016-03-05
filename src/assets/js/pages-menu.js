@@ -8,16 +8,17 @@ function pagesMenu() {
 
     var triggerWith = pagesMenuBlockTrigger.width();
     var pagesMenuBlockWith;
+    var setMarginLeft;
 
     if (!mobileMedia) {
         pagesMenuBlockWith = 200;
         positionLeft = pagesMenuBlockTriggerOffset;
+        setMarginLeft = (pagesMenuBlockWith / 2) - triggerWith;
     } else {
         pagesMenuBlockWith = '100%';
         positionLeft = 0;
+        setMarginLeft = 0;
     }
-
-    var setMarginLeft = (pagesMenuBlockWith / 2) - triggerWith;
 
     pagesMenuBlock.css({
         'width': pagesMenuBlockWith,
