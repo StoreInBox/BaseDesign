@@ -9,8 +9,8 @@ $(window).on('load', function() {
     toggleFilter();
     rangeFilter();
     pagesMenu();
-    cartPopup();
-    searchPopup();
+    cartPreview();
+    searchMobile();
 });
 
 // all initial on window resize
@@ -18,5 +18,5 @@ $(window).on('resize', function() {
     equalheight('[data-front="product-list"] [data-front="product-list-item"]');
     catalogueBlock();
     pagesMenu();
-    cartPopup();
+    cartPreview();
 });
