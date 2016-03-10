@@ -19,8 +19,19 @@ function catalogueBlock() {
         });
     }
 
-    catalogueBlockTrigger.click(function() {
+    catalogueBlockTrigger.click(function(event) {
+        event.stopPropagation();
         catalogueBlockTrigger.toggleClass('catalogue--active');
         catalogueBlock.toggleClass('catalogue-block--active');
+    });
+    catalogueBlock.click(function(event) {
+        event.stopPropagation();
+    })
+
+    $('html').click(function() {
+        if (catalogueBlock.hasClass('catalogue-block--active')) {
+            catalogueBlockTrigger.toggleClass('catalogue--active');
+            catalogueBlock.toggleClass('catalogue-block--active');
+        }
     });
 }
