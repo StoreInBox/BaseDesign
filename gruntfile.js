@@ -46,6 +46,8 @@ module.exports = function(grunt) {
                     'src/assets/js/filters.js',
                     'src/assets/js/range.js',
                     'src/assets/js/pages-menu.js',
+                    'src/assets/js/cart-preview.js',
+                    'src/assets/js/search-area.js',
                     'src/assets/js/scripts.js'
                 ],
                 dest: 'production/static/js/production.js'

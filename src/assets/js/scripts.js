@@ -10,7 +10,7 @@ $(window).on('load', function() {
     rangeFilter();
     pagesMenu();
     cartPreview();
-    searchMobile();
+    searchArea();
 });
 
 // all initial on window resize
