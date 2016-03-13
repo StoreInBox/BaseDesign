@@ -3,6 +3,7 @@
     color: $button-text-color;
     border-radius: 3px;
     @include font-size(16);
+    text-decoration: none;
     &:hover {
         background-color: $button-color-hover;
     }
@@ -13,5 +14,8 @@
     &--thin {
         line-height: 1;
         padding: 4px 6px;
+    }
+    &--normal {
+        padding: 6px 10px;
     }
 }

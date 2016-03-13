@@ -13,7 +13,7 @@ $base-block-padding-large: 80px;
     border-radius: 0 0 5px 5px;
     border: 1px solid #E8E8E8;
     border-top: 1px solid white;
-    background-color: white;
+    background-color: #F3F3F3;
     @include bp(allsmall) {
         right: $base-block-padding-small;
     }
@@ -25,5 +25,54 @@ $base-block-padding-large: 80px;
     }
     &--active {
         display: block;
+    }
+    &__total {
+        text-align: center;
+        margin-bottom: 10px;
+        @include font-size(16);
+    }
+    &__order-button {
+        text-align: center;
+        margin-bottom: 10px;
+        @include font-size(16);
+    }
+}
+
+.cart-preview-item {
+    display: flex;
+    align-items: center;
+    @include font-size(16);
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #E6E6E6;
+    &__product {
+        flex: auto;
+    }
+    &__price {
+        flex: 0 0 120px;
+    }
+    &__price-value {
+        font-weight: 700;
+        color: #363636;
+    }
+    &__currency {
+        color: #B1B1B1;
+    }
+    &__count {
+        flex: 0 0 70px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__input {
+        width: 25px;
+        text-align: center;
+    }
+    &__plus, &__minus, &__remove {
+        cursor: pointer;
+    }
+    &__remove {
+        color: red;
+        transform: rotate(45deg);
     }
 }
