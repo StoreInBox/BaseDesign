@@ -1,0 +1,29 @@
+$base-block-padding-small: 20px;
+$base-block-padding-medium: 60px;
+$base-block-padding-large: 80px;
+
+.cart-preview {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    width: 400px;
+    margin-top: -1px;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 0 0 5px 5px;
+    border: 1px solid #E8E8E8;
+    border-top: 1px solid white;
+    background-color: white;
+    @include bp(allsmall) {
+        right: $base-block-padding-small;
+    }
+    @include bp(md) {
+        right: $base-block-padding-medium;
+    }
+    @include bp(lg) {
+        right: $base-block-padding-large;
+    }
+    &--active {
+        display: block;
+    }
+}
