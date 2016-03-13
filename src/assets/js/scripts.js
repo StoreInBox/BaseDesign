@@ -11,6 +11,7 @@ $(window).on('load', function() {
     pagesMenu();
     cartPreview();
     searchArea();
+    itemsCount();
 });
 
 // all initial on window resize

@@ -13,6 +13,7 @@
         text-decoration: none;
         &--cart-count {
             cursor: pointer;
+            @include no-select;
         } // &--cart-count
         &--active {
             color: $link-color;
