@@ -33,10 +33,20 @@ $base-paddings-for-header: 20px;
 
 .search {
     float: right;
-    &__input {
-        padding: 5px 10px;
-        margin: 0;
-        @include font-size(16);
+    &__trigger {
+        cursor: pointer;
+        &--active {
+            // color: $link-color;
+            color: white;
+            position: fixed;
+            z-index: 9999;
+        }
+    }
+    &__close {
+        display: none;
+        &--active {
+            @include inline-middle;
+        }
     }
     @include bp(allsmall) {
         display: none;

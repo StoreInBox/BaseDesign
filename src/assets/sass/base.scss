@@ -29,6 +29,9 @@ body {
     @include bp(lg) {
         @include font-size(18);
     } // lg
+    &.no-scroll {
+        overflow: hidden;
+    }
 } // body
 
 img {
