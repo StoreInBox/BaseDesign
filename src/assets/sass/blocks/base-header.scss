@@ -42,12 +42,6 @@ $base-paddings-for-header: 20px;
             z-index: 9999;
         }
     }
-    &__close {
-        display: none;
-        &--active {
-            @include inline-middle;
-        }
-    }
     @include bp(allsmall) {
         display: none;
     }
