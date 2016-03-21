@@ -1,7 +1,7 @@
 function CategoriesMneu() {
     var activeClass = "catalogue-main-nav__item--active";
-    var SubTabContainer = $('[data-role="sub-tab"]');
-    var SubTabTrigger = $('[data-role="sub-tab-trigger"]');
+    var SubTabContainer = $('[front-role="sub-tab"]');
+    var SubTabTrigger = $('[front-role="sub-tab-trigger"]');
 
     SubTabContainer.hide().filter(':first').show();
     SubTabTrigger.filter(':first').addClass(activeClass);
