@@ -9,6 +9,10 @@
     border-bottom: 1px solid #E8E8E8;
     @include flex;
     display: none;
+    @include bp(allsmall) {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
     &--active {
         display: block;
     }
