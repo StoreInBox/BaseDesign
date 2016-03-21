@@ -1,7 +1,7 @@
 // document ready
 $(window).on('load', function() {
     scrollToContent();
-    equalheight('[data-front="product-list"] [data-front="product-list-item"]');
+    equalheight('[front-role="product-list"] [front-role="product-list-item"]');
     fixPanel();
     productImage();
     catalogueBlock();
@@ -16,7 +16,7 @@ $(window).on('load', function() {
 
 // all initial on window resize
 $(window).on('resize', function() {
-    equalheight('[data-front="product-list"] [data-front="product-list-item"]');
+    equalheight('[front-role="product-list"] [front-role="product-list-item"]');
     catalogueBlock();
     pagesMenu();
     cartPreview();
