@@ -1,10 +1,10 @@
 function itemsCount() {
-    var item = $('[data-front="items-count"]')
+    var item = $('[front-role="items-count"]')
 
     item.each(function() {
-        var input = $(this).find('[data-front="items-count-input"]');
-        var plus = $(this).find('[data-front="items-count-plus"]');
-        var minus = $(this).find('[data-front="items-count-minus"]');
+        var input = $(this).find('[front-role="items-count-input"]');
+        var plus = $(this).find('[front-role="items-count-plus"]');
+        var minus = $(this).find('[front-role="items-count-minus"]');
 
         plus.click(function() {
             var inputValue = parseInt(input.val());
