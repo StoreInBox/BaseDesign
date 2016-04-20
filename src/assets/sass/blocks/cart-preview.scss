@@ -72,7 +72,9 @@ $base-block-padding-large: 80px;
         cursor: pointer;
     }
     &__remove {
-        color: red;
-        transform: rotate(45deg);
+        i {
+            color: red;
+            transform: rotate(45deg);
+        }
     }
 }

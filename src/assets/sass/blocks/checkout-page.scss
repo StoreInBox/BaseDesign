@@ -1,0 +1,90 @@
+.checkout-page {
+    @include basic-block;
+    padding-top: 40px;
+    .checkout-list {
+        width: 80%;
+        margin: auto;
+        th {
+            text-align: left;
+        }
+        th, td {
+            padding: 10px 20px;
+            &:nth-child(1) {
+                padding-left: 0px;
+            }
+            &:nth-last-child(1) {
+                padding-right: 0px;
+            }
+            &.quantity {
+                width: 90px;
+            }
+        }
+        tr + tr {
+            td {
+                border-top: 1px solid #D0D0D0;
+            }
+        }
+    }
+    .checkout-list-item {
+        &__price {
+            width: 120px;
+        }
+        &__price-value {
+            font-weight: 700;
+            color: #363636;
+        }
+        &__currency {
+            color: #B1B1B1;
+        }
+        &__count {
+            width: 120px;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &__input {
+            width: 25px;
+            text-align: center;
+            padding: 4px;
+        }
+        &__plus, &__minus, &__remove {
+            cursor: pointer;
+            @include no-select;
+        }
+        &__remove {
+            i {
+                color: red;
+                transform: rotate(45deg);
+            }
+        }
+    }
+}
+
+.result {
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px;
+    background: #EAEAEA;
+    text-align: center;
+    &__price-value {
+        font-weight: 700;
+        color: #363636;
+    }
+    &__currency {
+        color: #B1B1B1;
+    }
+}
+
+.title-with-underline {
+    width: 80%;
+    margin: auto;
+    margin-top: $standart-margin-between;
+    margin-bottom: $standart-margin-between;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #D0D0D0;
+    &__text {
+        @include font-size(36);
+    }
+}

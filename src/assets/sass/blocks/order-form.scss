@@ -1,0 +1,26 @@
+.order-form {
+    &--incheckout {
+        width: 80%;
+        margin: auto;
+    }
+    &__fieldset + &__fieldset {
+        margin-top: 10px;
+    }
+    &__fieldset {
+        display: flex;
+        align-items: center;
+        &--submit {
+            display: block;
+            text-align: right;
+        }
+    }
+    &__label {
+        flex: auto;
+        text-align: right;
+        @include font-size(16);
+    }
+    &__input {
+        flex: 0 0 400px;
+        padding-left: 20px;
+    }
+}
