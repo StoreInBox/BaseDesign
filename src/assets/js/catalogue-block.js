@@ -5,7 +5,7 @@ function catalogueBlock() {
     var catalogueBlockTriggerOffset = catalogueBlockTrigger.offset().left;
 
     catalogueBlock.css({
-        'top': topForBlock + 1,
+        'top': topForBlock,
     });
 
     catalogueBlockTrigger.click(function(event) {
