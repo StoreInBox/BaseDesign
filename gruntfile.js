@@ -37,18 +37,8 @@ module.exports = function(grunt) {
         concat: {
             dist: {
                 src: [
-                    'src/assets/js/catalogue-block.js',
-                    'src/assets/js/product-image.js',
-                    'src/assets/js/scroll-discover.js',
-                    'src/assets/js/equal-height.js',
-                    'src/assets/js/fix-panel.js',
-                    'src/assets/js/categories-menu.js',
-                    'src/assets/js/filters.js',
-                    'src/assets/js/range.js',
-                    'src/assets/js/pages-menu.js',
-                    'src/assets/js/cart-preview.js',
-                    'src/assets/js/search-area.js',
-                    'src/assets/js/items-count.js',
+                    'src/assets/js/*.js',
+                    '!src/assets/js/scripts.js'
                     'src/assets/js/scripts.js'
                 ],
                 dest: 'production/static/js/production.js'
