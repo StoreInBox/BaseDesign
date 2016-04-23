@@ -38,7 +38,7 @@ module.exports = function(grunt) {
             dist: {
                 src: [
                     'src/assets/js/*.js',
-                    '!src/assets/js/scripts.js'
+                    '!src/assets/js/scripts.js',
                     'src/assets/js/scripts.js'
                 ],
                 dest: 'production/static/js/production.js'
